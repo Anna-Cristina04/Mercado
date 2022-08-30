@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <link rel="stylesheet" href="./editar.css">
+    
+</head>
+    <header>
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./cadastro.html">Cadastrar</a></li>
+            <li><a href="./listar.html">Listar</a></li>
+            <li><a href="./editar.html">Editar</a></li>
+        </ul>
+        <div id="nomeMercado"></div>
+        <picture>
+            <img src="" id="imagem">
+        </picture>
+    </header>
+    <div class="centro">
+        <h2>Editar Produtos</h2>
+        <form class="tabela">
+                <p>Nome do Produto:</p>
+                <input id="nome" type="text" placeholder="Nome">
+                <br><br>
+                <p>Código do Produto:</p>
+                <input id="codigo" type="text" placeholder="Código">
+                <br><br>
+                <p>Itens no Estoque:</p>
+                <input id="estoque" type="text" placeholder="Quantidade no estoque">
+                <br><br>
+                <p>Preço Unitário:</p>
+                <input id="preco" type="text" placeholder="Preço">
+                <br><br>
+                <p>Preço por Medida:</p>
+                <input id="precoMed" type="text" placeholder="Preço por medida"> 
+                <br><br>
+                <p>Setor:</p>
+                <input id="setor" type="text" placeholder="Setor">
+                <br><br>
+                <p>Imagem: </p>
+                <input id="foto" type="text" placeholder="Foto(url)">
+                <br><br>
+                        <tr>
+                            <td>
+                                <select id="categoria" value="Higiene">
+                                    <option>Categorias</option>
+                                    <option value="Higiene">Higiene</option>
+                                    <option value="Hortifruti">Hortifruti</option>
+                                    <option value="Açougue">Açougue</option>
+                                    <option value="Limpeza">Limpeza</option>
+                                    <option value="Frios e Laticínios">Frios e Laticínios</option>
+                                    <option value="Mercearia">Mercearia</option>
+                                    <option value="Padaria">Padaria</option>
+                                    <option value="Bebida">Bebida</option>
+                                    <option value="Pet Shop">Pet Shop</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <br><br>
+
+                        <tr>
+                            <td>
+                                <select id="unidade">
+                                    <option>Unidade de Medida</option>
+                                    <option value="Kg">Quilograma(kg)</option>
+                                    <option value="m">Metro(m)</option>
+                                    <option value="l">Litro(l)</option>
+                                    <option value="g">Grama(g)</option>
+                                    <option value="cm">Centímetro(cm)</option>
+                                    <option value="mm">Milimetro(mm)</option>
+                                    <option value="mg">Miligrama(mg)</option>
+                                    <option value="ml">Mililitro(mm)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <br><br>
+
+        <form class="tabela">
+                        <input id="button" type="button" value="Cadastrar" class="botaoI" onclick="cadastrar2()">
+                        <input type="reset" value="Limpar" class="botaoI">
+        </form>
+                </div> 
+
+    <script src="./index.js"></script>
+</body>
+</html>

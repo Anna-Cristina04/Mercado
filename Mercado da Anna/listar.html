@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar</title>
+    <link rel="stylesheet" href="./listar.css">
+</head>
+
+        <header>
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./cadastro.html">Cadastrar</a></li>
+                <li><a href="./listar.html">Listar</a></li>
+                <li><a href="./editar.html">Editar</a></li>
+            </ul>
+            <div id="nomeMercado"></div>
+            <picture>
+                <img src="" id="imagem">
+            </picture>
+        </header>
+        
+    
+        <div class="centro">
+            <h2>Lista dos Produtos</h2>
+            <form class="tabela">
+                <input id="buttonEdit" type="button" value="Editar" class="botaoI" onclick="editar()">
+                <div id="texto1"></div>
+                <picture>
+                    <img src="" id="foto">
+                </picture>
+                <div id="texto2"></div>
+                <input id="buttonCad" type="button" value="Cadastrar Novamente" class="botaoI" onclick="listar2()">
+              
+                <input id="buttonRemove" type="button" value="Remover" class="botaoI" onclick="remover()">
+                
+            </form>
+        </div> 
+        <div id="box">s
+            <div id="itens"></div>
+        </div>
+    <script src="./index.js"></script>
+    <script type="text/javascript">
+        listar()
+    </script>
+</body>
+</html>
